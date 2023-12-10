@@ -1,0 +1,26 @@
+0.7
+2020.2
+May  7 2023
+15:10:42
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/alu_sim.vhd,1697134263,vhdl,,,,alu_sim,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/controlpath_sim.vhd,1697209362,vhdl,,,,controlpath_sim,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/datapath_sim.vhd,1697193410,vhdl,,,,datapath_sim,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/extend_unit_sim.vhd,1696928819,vhdl,,,,extend_unit_sim,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/proccessor_sim.vhd,1697388262,vhdl,,,,proccessor_sim,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/proccessor_sim_2.vhd,1697391785,vhdl,,,,proccessor_sim_2,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/register_file_sim.vhd,1696270185,vhdl,,,,register_file_sim,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/CONDLogic.vhd,1697197475,vhdl,,,,condlogic,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/InstrDec.vhd,1697383231,vhdl,,,,instrdec,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/PCLogic.vhd,1697196601,vhdl,,,,pclogic,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/RAM.vhd,1697143137,vhdl,,,,ram,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/WELogic.vhd,1697195942,vhdl,,,,welogic,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/adder_const.vhd,1695985079,vhdl,,,,adder_const,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/alu.vhd,1697374113,vhdl,,,,alu,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/controlpath.vhd,1697383308,vhdl,,,,controlpath,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/datapath.vhd,1697193236,vhdl,,,,datapath,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/extend_unit.vhd,1697147413,vhdl,,,,extend_unit,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/instruction_memory.vhd,1697387545,vhdl,,,,instruction_memory,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/multiplexer2to1.vhd,1696927037,vhdl,,,,multiplexer2to1,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/processor.vhd,1697392159,vhdl,,,,processor,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/register_file.vhd,1697147718,vhdl,,,,register_file,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sources_1/new/register_s.vhd,1695997598,vhdl,,,,register_s,,,,,,,,

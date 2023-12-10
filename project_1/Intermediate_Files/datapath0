@@ -1,0 +1,107 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 09/29/2023 05:18:46 PM
+-- Design Name: 
+-- Module Name: datapath - datapath_beh
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity datapath is
+generic (
+WORDLENGTH : positive := 32; -- word size
+
+ROM_SIZE : positive := 8 -- instr rom size +2
+);
+port(
+CLK: in STD_LOGIC;
+RESET: in STD_LOGIC;
+
+INSTR: out std_logic_vector(WORDLENGTH-1 downto 0)
+
+);
+end datapath;
+
+architecture datapath_beh of datapath is
+signal addr_reg_intr_memory: std_logic_vector(WORDLENGTH-1 downto 0);
+signal addr_adder_register: std_logic_vector(WORDLENGTH-1 downto 0);
+
+component register_s is
+generic (
+N : positive := 32 -- address length
+);
+port (
+CLK,RESET,WE: in STD_LOGIC;
+D: in STD_LOGIC_VECTOR (N-1 downto 0);
+Q: out STD_LOGIC_VECTOR (N-1 downto 0));
+end component;
+
+component instruction_memory is
+generic (
+N : positive := 4; -- address length
+M : positive := 32); -- data word lengthport (
+port(
+ADDR: in STD_LOGIC_VECTOR (N-1 downto 0);
+DATA_OUT: out STD_LOGIC_VECTOR (M-1 downto 0));
+end component;
+
+component adder_const is
+generic (
+N : positive := 32; -- address length
+A : positive := 4 -- address length
+);
+port(
+DATA_IN: in STD_LOGIC_VECTOR (N-1 downto 0);
+DATA_OUT: out STD_LOGIC_VECTOR (N-1 downto 0));
+end component;
+
+
+begin
+Inst_Mem:instruction_memory generic map ( N=>ROM_SIZE,M=>WORDLENGTH)
+port map(
+ADDR=>addr_reg_intr_memory(ROM_SIZE-1 downto 0),
+DATA_OUT=>INSTR
+);
+
+register_si:register_s generic map ( N=>WORDLENGTH)
+port map(
+CLK=>CLK,
+RESET=>RESET,
+WE=>'1',
+D=>addr_adder_register,
+Q=>addr_reg_intr_memory
+);
+
+adder_next_instruction:adder_const generic map (N=>WORDLENGTH,A=>4)
+port map(
+DATA_IN=>addr_reg_intr_memory,
+DATA_OUT=>addr_adder_register
+);
+
+
+
+end datapath_beh;

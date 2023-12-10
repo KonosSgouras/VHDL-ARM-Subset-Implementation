@@ -1,0 +1,7 @@
+0.7
+2020.2
+May  7 2023
+15:10:42
+/home/konstantinos/Documents/Vivado/project_1/project_1.sim/sim_1/synth/func/xsim/proccessor_sim_2_func_synth.v,1697388614,verilog,,,,InstrDec;RAM;WELogic;adder_const;alu;controlpath;datapath;glbl;processor;register_file;register_s;register_s__parameterized1,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/proccessor_sim.vhd,1697387589,vhdl,,,,proccessor_sim,,,,,,,,
+/home/konstantinos/Documents/Vivado/project_1/project_1.srcs/sim_1/new/proccessor_sim_2.vhd,1697388415,vhdl,,,,proccessor_sim_2,,,,,,,,

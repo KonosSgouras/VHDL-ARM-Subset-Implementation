@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "datapath_sim_behav" "xil_defaultlib.datapath_sim" -log "elaborate.log" 

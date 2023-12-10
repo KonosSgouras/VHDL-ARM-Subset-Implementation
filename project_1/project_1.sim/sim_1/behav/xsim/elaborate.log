@@ -1,0 +1,33 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot proccessor_sim_behav xil_defaultlib.proccessor_sim -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture instruction_memory_beh of entity xil_defaultlib.instruction_memory [\instruction_memory(n=8)\]
+Compiling architecture register_s_beh of entity xil_defaultlib.register_s [register_s_default]
+Compiling architecture adder_const_beh of entity xil_defaultlib.adder_const [adder_const_default]
+Compiling architecture multiplexer2to1_beh of entity xil_defaultlib.multiplexer2to1 [\multiplexer2to1(width=4)\]
+Compiling architecture multiplexer2to1_beh of entity xil_defaultlib.multiplexer2to1 [multiplexer2to1_default]
+Compiling architecture extend_unit_beh of entity xil_defaultlib.extend_unit [extend_unit_default]
+Compiling architecture register_file_beh of entity xil_defaultlib.register_file [register_file_default]
+Compiling architecture alu_beh of entity xil_defaultlib.alu [alu_default]
+Compiling architecture register_s_beh of entity xil_defaultlib.register_s [\register_s(n=4)\]
+Compiling architecture ram_beh of entity xil_defaultlib.RAM [\RAM(n=7)\]
+Compiling architecture datapath_beh of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture instrdec_beh of entity xil_defaultlib.InstrDec [instrdec_default]
+Compiling architecture welogic_beh of entity xil_defaultlib.WELogic [welogic_default]
+Compiling architecture pclogic_beh of entity xil_defaultlib.PCLogic [pclogic_default]
+Compiling architecture condlogic_beh of entity xil_defaultlib.CONDLogic [condlogic_default]
+Compiling architecture controlpath_beh of entity xil_defaultlib.controlpath [controlpath_default]
+Compiling architecture processor_beh of entity xil_defaultlib.processor [processor_default]
+Compiling architecture proccessor_sim_beh of entity xil_defaultlib.proccessor_sim
+Built simulation snapshot proccessor_sim_behav

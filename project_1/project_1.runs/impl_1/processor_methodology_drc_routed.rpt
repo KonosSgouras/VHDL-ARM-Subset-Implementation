@@ -1,0 +1,787 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Sun Oct 15 20:39:49 2023
+| Host         : konstantinos-OptiPlex-3040 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : report_methodology -file processor_methodology_drc_routed.rpt -pb processor_methodology_drc_routed.pb -rpx processor_methodology_drc_routed.rpx
+| Design       : processor
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 149
++-----------+----------+--------------------------------+------------+
+| Rule      | Severity | Description                    | Violations |
++-----------+----------+--------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert   | 5          |
+| TIMING-18 | Warning  | Missing input or output delay  | 97         |
+| TIMING-20 | Warning  | Non-clocked latch              | 46         |
+| LATCH-1   | Advisory | Existing latches in the design | 1          |
++-----------+----------+--------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dp/register_si/ALUControl_reg[0]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cp/InstrDec_c/ALUControl_reg[0]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dp/register_si/ALUControl_reg[0]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) cp/InstrDec_c/ALUControl_reg[0]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dp/register_si/ALUControl_reg[3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cp/InstrDec_c/ALUControl_reg[1]/CLR, cp/InstrDec_c/ALUControl_reg[2]/CLR,
+cp/InstrDec_c/ALUControl_reg[3]/CLR, cp/InstrDec_c/ALUSrc_0_reg/CLR,
+cp/InstrDec_c/ALUSrc_reg/PRE, cp/InstrDec_c/NoWrite_reg/CLR
+cp/WELogic_c/FlagsWrite_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dp/register_si/ImmSrc_reg_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) cp/InstrDec_c/ImmSrc_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dp/register_si/MemToReg_reg_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) cp/InstrDec_c/ImmSrc_reg/PRE, cp/InstrDec_c/MemToReg_reg/CLR,
+cp/WELogic_c/MemWrite_reg/CLR, cp/WELogic_c/RegWrite_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on RESET relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on PC[0] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on PC[10] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on PC[11] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on PC[12] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on PC[13] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on PC[14] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on PC[15] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on PC[16] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on PC[17] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on PC[18] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on PC[19] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on PC[1] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on PC[20] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on PC[21] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on PC[22] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on PC[23] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on PC[24] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on PC[25] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on PC[26] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on PC[27] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on PC[28] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on PC[29] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on PC[2] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on PC[30] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on PC[31] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on PC[3] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on PC[4] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on PC[5] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on PC[6] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on PC[7] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on PC[8] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on PC[9] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on Result[0] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on Result[10] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on Result[11] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on Result[12] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on Result[13] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on Result[14] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on Result[15] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on Result[16] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on Result[17] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on Result[18] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on Result[19] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on Result[1] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on Result[20] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on Result[21] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on Result[22] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on Result[23] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on Result[24] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on Result[25] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on Result[26] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#53 Warning
+Missing input or output delay  
+An output delay is missing on Result[27] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#54 Warning
+Missing input or output delay  
+An output delay is missing on Result[28] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#55 Warning
+Missing input or output delay  
+An output delay is missing on Result[29] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#56 Warning
+Missing input or output delay  
+An output delay is missing on Result[2] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#57 Warning
+Missing input or output delay  
+An output delay is missing on Result[30] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#58 Warning
+Missing input or output delay  
+An output delay is missing on Result[31] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#59 Warning
+Missing input or output delay  
+An output delay is missing on Result[3] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#60 Warning
+Missing input or output delay  
+An output delay is missing on Result[4] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#61 Warning
+Missing input or output delay  
+An output delay is missing on Result[5] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#62 Warning
+Missing input or output delay  
+An output delay is missing on Result[6] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#63 Warning
+Missing input or output delay  
+An output delay is missing on Result[7] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#64 Warning
+Missing input or output delay  
+An output delay is missing on Result[8] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#65 Warning
+Missing input or output delay  
+An output delay is missing on Result[9] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#66 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[0] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#67 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[10] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#68 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[11] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#69 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[12] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#70 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[13] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#71 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[14] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#72 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[15] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#73 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[16] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#74 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[17] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#75 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[18] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#76 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[19] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#77 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[1] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#78 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[20] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#79 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[21] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#80 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[22] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#81 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[23] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#82 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[24] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#83 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[25] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#84 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[26] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#85 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[27] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#86 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[28] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#87 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[29] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#88 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[2] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#89 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[30] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#90 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[31] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#91 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[3] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#92 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[4] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#93 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[5] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#94 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[6] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#95 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[7] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#96 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[8] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-18#97 Warning
+Missing input or output delay  
+An output delay is missing on WriteData[9] relative to the rising and/or falling clock edge(s) of CLK.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/ALUControl_reg[0]/L7 (in cp/InstrDec_c/ALUControl_reg[0] macro) cannot be properly analyzed as its control pin cp/InstrDec_c/ALUControl_reg[0]/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/ALUControl_reg[1] cannot be properly analyzed as its control pin cp/InstrDec_c/ALUControl_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/ALUControl_reg[2] cannot be properly analyzed as its control pin cp/InstrDec_c/ALUControl_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/ALUControl_reg[3] cannot be properly analyzed as its control pin cp/InstrDec_c/ALUControl_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/ALUSrc_0_reg cannot be properly analyzed as its control pin cp/InstrDec_c/ALUSrc_0_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/ALUSrc_reg cannot be properly analyzed as its control pin cp/InstrDec_c/ALUSrc_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/ImmSrc_reg/L7 (in cp/InstrDec_c/ImmSrc_reg macro) cannot be properly analyzed as its control pin cp/InstrDec_c/ImmSrc_reg/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/MemToReg_reg cannot be properly analyzed as its control pin cp/InstrDec_c/MemToReg_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/NoWrite_reg cannot be properly analyzed as its control pin cp/InstrDec_c/NoWrite_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch cp/InstrDec_c/RegSrc_reg[1] cannot be properly analyzed as its control pin cp/InstrDec_c/RegSrc_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch cp/WELogic_c/FlagsWrite_reg cannot be properly analyzed as its control pin cp/WELogic_c/FlagsWrite_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch cp/WELogic_c/MemWrite_reg cannot be properly analyzed as its control pin cp/WELogic_c/MemWrite_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch cp/WELogic_c/RegWrite_reg cannot be properly analyzed as its control pin cp/WELogic_c/RegWrite_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[0] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[10] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[11] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[12] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[13] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[14] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[15] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[16] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[17] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[18] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[19] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[1] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[20] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[21] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[22] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[23] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[24] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[25] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[26] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[27] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[28] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[29] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[2] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[30] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[31] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[32] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[3] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[4] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[5] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[6] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[7] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[8] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch dp/alu_c/result_s_reg[9] cannot be properly analyzed as its control pin dp/alu_c/result_s_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 46 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

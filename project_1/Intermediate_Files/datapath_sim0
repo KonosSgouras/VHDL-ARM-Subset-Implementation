@@ -1,0 +1,89 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 09/29/2023 05:35:17 PM
+-- Design Name: 
+-- Module Name: datapath_sim - datapath_sim_beh
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity datapath_sim is
+generic (
+WORDLENGTH : positive := 32; -- word size
+
+ROM_SIZE : positive := 8 -- instr rom size +2
+);
+end datapath_sim;
+
+architecture datapath_sim_beh of datapath_sim is
+signal CLK,RESET:  STD_LOGIC;
+signal INSTR: std_logic_vector(WORDLENGTH-1 downto 0);
+
+component datapath is
+generic (
+WORDLENGTH : positive := 32; -- word size
+
+ROM_SIZE : positive := 8 -- instr rom size +2
+);
+port(
+CLK: in STD_LOGIC;
+RESET: in STD_LOGIC;
+
+INSTR: out std_logic_vector(WORDLENGTH-1 downto 0)
+
+);
+end component;
+
+begin
+datapath_c:datapath generic map ( WORDLENGTH=>WORDLENGTH, ROM_SIZE=>ROM_SIZE)
+port map(
+CLK=>CLK,
+RESET=>RESET,
+INSTR=>INSTR
+);
+CLK_process : process
+begin
+    CLK<='1';
+    wait for 50ns;
+    CLK<='0';
+    wait for 50ns;
+   end process;
+
+stimulus_process: process
+begin
+    
+    RESET <='1';
+    wait for 100ns;
+    wait until (CLK = '0' and CLK'event);
+    RESET <= '0';
+    wait for 10000ns;
+    
+end process;
+
+
+end datapath_sim_beh;
+
